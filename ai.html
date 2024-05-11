@@ -36,32 +36,32 @@
                     <h2>AI Features</h2>
                     <div class="features-grid">
                         <div class="feature-item">
-                            <img src=" and ext d945534c-35bf-488f-86a8-837a85fabf73.png" alt="Machine Learning Icon">
+                            <img src="IMG/Machine Learning.jpg" alt="Machine Learning Icon">
                             <h3>Machine Learning</h3>
                             <p>Empower systems to learn and improve from experience.</p>
                         </div>
                         <div class="feature-item">
-                            <img src=" systems 28179fd2-462c-47f8-ba15-64d29b008a44.png" alt="Natural Language Processing Icon">
+                            <img src="IMG/Natural Language Processing.jpg" alt="Natural Language Processing Icon">
                             <h3>Natural Language Processing</h3>
                             <p>Enable computers to understand, interpret, and generate human language.</p>
                         </div>
                         <div class="feature-item">
-                            <img src=" computer 5f04280d-9421-471c-81bb-91047fe3bb14.png" alt="Computer Vision Icon">
+                            <img src="IMG/Computer Vision.jpg" alt="Computer Vision Icon">
                             <h3>Computer Vision</h3>
                             <p>Enable machines to interpret and understand visual information.</p>
                         </div>
                         <div class="feature-item">
-                            <img src=" AI wi 1d616369-eb4f-44ee-a7e5-5c18e6f01b95.png" alt="Robotics Icon">
+                            <img src="IMG/robotics.jpg" alt="Robotics Icon">
                             <h3>Robotics</h3>
                             <p>Integrate AI with physical systems to automate tasks and enhance efficiency.</p>
                         </div>
                         <div class="feature-item">
-                            <img src="" alt="Big Data Analysis Icon">
+                            <img src="IMG/Big Data Analysis.jpg" alt="Big Data Analysis Icon">
                             <h3>Big Data Analysis</h3>
                             <p>Analyze and extract insights from large and complex datasets.</p>
                         </div>
                         <div class="feature-item">
-                            <img src="noun-big-data-analysis-6028758.png" alt="Predictive Analytics Icon">
+                            <img src="IMG/Predictive Analytics.jpg" alt="Predictive Analytics Icon">
                             <h3>Predictive Analytics</h3>
                             <p>Forecast trends and outcomes based on historical data and patterns.</p>
                         </div>
@@ -99,13 +99,13 @@
                 
                 
                 
-          <!-- ------------------------------------future ai----------------------------           -->
+          <!-- ------------------------------------future ai------------------------------>
                     
           <div class="future-ai" id="future-ai">
             <h2>The Future of AI</h2>
             <div class="ai-cards" id="ai-cards">
                 <!-- AI cards will be dynamically generated here -->
-            </div>
+            </div>     
             <div class="ai-features2" id="ai-features">
                 <h3>AI Features</h3>
                 <p>Loading information about AI features...</p>
@@ -276,15 +276,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Sample data for AI cards and features
     const cardsData = [
-        { title: 'AI in Robotics', description: 'Description for AI in Robotics', imgSrc: 'robot-icon.png' },
-        { title: 'AI in Healthcare', description: 'Description for AI in Healthcare', imgSrc: 'healthcare-icon.png' }
+        { title: 'AI in Robotics', description: 'Description for AI in Robotics', imgSrc: 'Img/ai_image_png-removebg-preview.png' },
+        { title: 'AI in Healthcare', description: 'Description for AI in Healthcare', imgSrc: 'Img/ai_in_healthcare-removebg.png' }
         // Add more cards data as needed
     ];
 
     const featuresData = [
         'Feature 1: Description of Feature 1',
         'Feature 2: Description of Feature 2',
-        'Feature 3: Description of Feature 3'
+        'Feature 3: Description of Feature 3',
+        'Feature 4: Description of Feature 4',
         // Add more features data as needed
     ];
 
@@ -293,6 +294,11 @@ document.addEventListener('DOMContentLoaded', () => {
         cardsData.forEach(item => {
             const aiCard = document.createElement('div');
             aiCard.classList.add('ai-card');
+            aiCard.innerHTML = `
+                <img src="${item.imgSrc}" alt="${item.title} Icon">
+                <h3>${item.title}</h3>
+                <p>${item.description}</p>
+            `;
             aiCard.innerHTML = `
                 <img src="${item.imgSrc}" alt="${item.title} Icon">
                 <h3>${item.title}</h3>
@@ -323,6 +329,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const aboutData = [
         { title: 'Company History', description: 'Learn about our journey and milestones.' },
         { title: 'Mission & Vision', description: 'Discover our mission and vision for the future.' },
+    
         // Add more about data as needed
     ];
 
@@ -361,7 +368,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     servicesData.forEach(createServiceCard);
 });
-// ------------------------------------------end-----------------------------
+// ------------------------------------------front sentence animation-----------------------------
     </script>
 
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -374,6 +381,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loop:true
   });
 </script>
+<!-- -----------------------------------END----------------------------------------- -->
 </body>
 
 </html>
