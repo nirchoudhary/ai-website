@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Background Color</title>
+<style>
+    /* Style for the container */
+    .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to right, #4caf50, #2196f3);
+        animation: colorAnimation 5s infinite alternate;
+    }
+
+    /* Keyframe animation for changing background color */
+    @keyframes colorAnimation {
+        0% { background-color: #4caf50; }
+        50% { background-color: #ff9800; }
+        100% { background-color: #2196f3; }
+    }
+
+    /* Additional styles for text */
+    .text {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="text">Animated Background</div>
+</div>
+</body>
+</html>
