@@ -69,12 +69,12 @@
                 </div>
 
                 <!-- ---------------------ai power---------------------- -->
-                <div class="ai-power" id="ai-power">
+                 <div class="ai-power" id="ai-power">
                     <h2>The Power of AI</h2>
                     <div class="power-grid" id="power-grid">
                         <div class="power-item">
                             <img src="pikaso_texttoimage_35mm-film-photography-Comprehensive-data-visualiza.jpeg" alt="Automation Icon">
-                            <h3>Automation</h3>
+                            <a target="_blank"   href="power of ai section html pages/Automation.html"> <h3>Automation</h3></a>
                             <p>Loading information about automation...</p>
                             <ul class="features-list">
                                 <li>Streamline repetitive tasks</li>
@@ -82,9 +82,10 @@
                                 <li>Improve resource allocation</li>
                             </ul>
                         </div>
+                    
                         <div class="power-item">
                             <img src="prediction.png" alt="Prediction Icon">
-                            <h3>Prediction & Analysis</h3>
+                            <a target="_blank"   href="power of ai section html pages/Prediction&Analysis .html"> <h3>Prediction & Analysis</h3></a>
                             <p>Loading information about prediction and analysis...</p>
                             <ul class="features-list">
                                 <li>Forecast trends and outcomes</li>
@@ -92,7 +93,42 @@
                                 <li>Make data-driven decisions</li>
                             </ul>
                         </div>
+                        <!-- <div class="power-item">
+                            <img src="recommendation.jpg" alt="Recommendation Icon">
+                            <a target="_blank" href="html link pages/Recommendation Systems.html"> <h3>Recommendation Systems</h3></a>
+                            <p>Loading information about recommendation systems...</p>
+                            <ul class="features-list">
+                                <li>Personalize user experiences</li>
+                                <li>Suggest relevant products/content</li>
+                                <li>Improve customer engagement</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="power-item">
+                            <img src="sentiment-analysis.png" alt="Sentiment Analysis Icon">
+                            <a target="_blank" href="html link pages/Sentiment Analysis.html"> <h3>Sentiment Analysis</h3></a>
+                            <p>Loading information about sentiment analysis...</p>
+                            <ul class="features-list">
+                                <li>Understand customer opinions</li>
+                                <li>Monitor brand perception</li>
+                                <li>Identify trends and patterns</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="power-item">
+                            <img src="natural-language-processing.jpg" alt="NLP Icon">
+                            <a target="_blank" href="html link pages/Natural Language Processing.html"> <h3>Natural Language Processing</h3></a>
+                            <p>Loading information about natural language processing...</p>
+                            <ul class="features-list">
+                                <li>Interpret and analyze text data</li>
+                                <li>Enable chatbots and virtual assistants</li>
+                                <li>Facilitate language translation</li>
+                            </ul>
+                        </div> -->
+                        
+                        
                         <!-- Add more power items as needed -->
+                    
                     </div>
                 </div>
                 
@@ -126,15 +162,26 @@
 </div>
 
 <!-- -----------------------------------services section---------------------------------------------- -->
-    <section id="services">
-        <div class="services" id="services">
-            <h2>Our Services</h2>
-            <div class="services-grid" id="services-grid">
-                <!-- Services cards will be dynamically generated here -->
-            </div>
+<section id="services">
+    <div class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid" id="services-grid">
+            <!-- Services cards will be dynamically generated here -->
         </div>
-        
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+        </ul>
+    </nav>
+    <section class="promoting-section" id="promoting-section">
+        <h2>Special Promotion</h2>
+        <p>Get 20% off on all services this month!</p>
     </section>
+</section>
+<script src="script.js"></script>
+
 <!-- ----------------------------------------contact section---------------------------------------------- -->
     <section id="contact">
         <section id="contact">
@@ -154,20 +201,20 @@
     
     </section>
    
-    <section>
+    <div class="footer-content">
+        <p>&copy; 2024 AI Website. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    
        
-            <div class="footer-content">
-                <p>&copy; 2024 AI Website. All Rights Reserved.</p>
-                <div class="social-icons">
-                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                
-            </div>
+    
         
-    </section>
+    
     
 
 
@@ -230,21 +277,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const powerGrid = document.getElementById('power-grid');
 
     // Sample data for power items
-    const data = [
-        {
-            icon: 'pikaso_texttoimage_Loading-information-about-automation-pastel-soft-t.jpeg',
-            title: 'Automation',
-            description: 'Automate repetitive tasks to enhance efficiency and accuracy.',
-            features: ['Streamline tasks', 'Enhance efficiency', 'Improve resource allocation']
-        },
-        {
-            icon: 'pixlr-image-generator-2b2164ff-6a7f-4a67-a5d7-c2ee1864a5ef.png',
-            title: 'Prediction & Analysis',
-            description: 'Forecast trends, analyze large datasets, and make data-driven decisions.',
-            features: ['Forecast trends', 'Analyze datasets', 'Data-driven decisions']
-        }
-        // Add more data objects for additional power items
-    ];
+    // const data = [
+    //     {
+    //         icon: 'pikaso_texttoimage_Loading-information-about-automation-pastel-soft-t.jpeg',
+    //         title: 'Automation',
+    //         description: 'Automate repetitive tasks to enhance efficiency and accuracy.',
+    //         features: ['Streamline tasks', 'Enhance efficiency', 'Improve resource allocation']
+    //     },
+    //     {
+    //         icon: 'pixlr-image-generator-2b2164ff-6a7f-4a67-a5d7-c2ee1864a5ef.png',
+    //         title: 'Prediction & Analysis',
+    //         description: 'Forecast trends, analyze large datasets, and make data-driven decisions.',
+    //         features: ['Forecast trends', 'Analyze datasets', 'Data-driven decisions']
+    //     }
+    //     // Add more data objects for additional power items
+    // ];
 
     // Function to create power items with fetched data
     const createPowerItems = () => {
@@ -276,16 +323,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Sample data for AI cards and features
     const cardsData = [
-        { title: 'AI in Robotics', description: 'Description for AI in Robotics', imgSrc: 'Img/ai_image_png-removebg-preview.png' },
-        { title: 'AI in Healthcare', description: 'Description for AI in Healthcare', imgSrc: 'Img/ai_in_healthcare-removebg.png' }
+        { title: 'AI in Robotics',
+         description: '<a target="_blank"   href="The Future of AI html pages/AI in Robotics.html">Description for AI in Robotics</a>',
+             imgSrc: 'Img/ai_image_png-removebg-preview.png' },
+        { title: 'AI in Healthcare', 
+        description: '<a target="_blank"   href="The Future of AI html pages/AI in Healthcare.html">Description for AI in Healthcare</a>', 
+            imgSrc: 'Img/ai_in_healthcare-removebg.png' }
         // Add more cards data as needed
     ];
 
     const featuresData = [
-        'Feature 1: Description of Feature 1',
-        'Feature 2: Description of Feature 2',
-        'Feature 3: Description of Feature 3',
-        'Feature 4: Description of Feature 4',
+        'Feature 1:Advanced AI-driven robotics transforming industries.',
+        'Feature 2: Personalized AI-powered healthcare diagnostics and treatments.',
+        'Feature 3: AI-enabled autonomous vehicles reshaping transportation.',
+        'Feature 4:AI-driven personalized learning and education platforms.',
+        'Feature 5:Enhanced AI cybersecurity for protecting digital assets.',
+        'Feature 6: Ethical considerations and regulations for AI development and use.',
+        'Feature 7: Automation of repetitive tasks across various sectors.',
+        'Feature 8:AI-driven creative tools for art, music, and content creation.',
+        'Feature 9: Improved natural language processing for human-machine interactions.',
+        'Feature 10:Exploration of AI applications in quantum computing for complex problem-solving.',
+
         // Add more features data as needed
     ];
 
@@ -382,6 +440,18 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 </script>
 <!-- -----------------------------------END----------------------------------------- -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const servicesLink = document.querySelector('a[href="services.html"]');
+    const promotingSection = document.getElementById('promoting-section');
+
+    servicesLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        promotingSection.classList.toggle('show');
+    });
+});
+</script>
+
 </body>
 
 </html>
